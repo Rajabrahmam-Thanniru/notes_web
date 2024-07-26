@@ -1,0 +1,23 @@
+body{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h1{
+    color: black;
+}
+
+@media(max-width:540px){
+    body{
+        background-color: aqua;
+    }
+}
+
+
+@media(min-width:540px) and (max-width:780px){
+    body{
+        background-color: beige;
+    }
+}

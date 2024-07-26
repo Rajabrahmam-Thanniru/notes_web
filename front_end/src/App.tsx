@@ -1,9 +1,9 @@
-import Some from "./pages/Some";
+import UploadNote from "./components/pages/UploadNote";
 
 function App() {
   return (
     <div>
-      <Some />
+      <UploadNote />
     </div>
   );
 }
