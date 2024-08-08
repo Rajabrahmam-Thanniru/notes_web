@@ -11,10 +11,16 @@ function ShowNotes() {
   const [listOfnotes, setListOfnotes] = useState<Note[]>([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3001/notes").then((response) => {
-      setListOfnotes(response.data);
-    });
+    axios
+      .get("http://localhost:3001/notes")
+      .then((response) => {
+        setListOfnotes(response.data);
+      })
+      .catch((error) => {
+        console.error("There was an error fetching the notes!", error);
+      });
   }, []);
+
   return (
     <>
       <h1>ShowNotes</h1>
@@ -25,7 +31,7 @@ function ShowNotes() {
               <div>
                 <h2>{value.title}</h2>
               </div>
-              <div className="discription">
+              <div className="description">
                 <p>{value.note}</p>
               </div>
             </div>
