@@ -1,5 +1,8 @@
 body {
-    background-color: rgb(83, 81, 81) !important;
+  background-color: rgba(83, 81, 81) !important; 
+}
 
-  }
-  
+h1, h2, p {
+  color: aliceblue !important;
+  opacity: 0.3 !important; 
+}
